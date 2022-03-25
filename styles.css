@@ -5,19 +5,19 @@ font-family: 'Ubuntu', sans-serif;
 */
 .hero{
     display: flex;
-    z-index: 8;
+    z-index: 6;
 }
 .hero,img{
     width: 100%;
     height: auto;
-    z-index: 7;
+    z-index: 5;
 }
 /* .main-buttons{
     background-color: #2F7291;
 } */
 .logoImages{
     position: fixed;
-    z-index: 8;
+    z-index: 6;
     opacity: 40%;
 }
 .logoSmallImages{
@@ -28,7 +28,7 @@ font-family: 'Ubuntu', sans-serif;
 }
 #logo-img1{
     position:fixed;
-    z-index: 9;
+    z-index: 7;
     /* border: red solid 2px; */
     transition-property: all;
 }
@@ -50,7 +50,7 @@ font-family: 'Ubuntu', sans-serif;
 }
 #logo-img2{
     position:fixed;
-    z-index: 9;
+    z-index: 7;
     transition-property: all;
     /* border: blue solid 2px; */
 }
@@ -73,7 +73,7 @@ font-family: 'Ubuntu', sans-serif;
 }
 #logo-img3{
     position:fixed;
-    z-index: 9;
+    z-index: 7;
     transition-property: all;
     /* border: green solid 2px; */
 }
@@ -103,7 +103,7 @@ font-family: 'Ubuntu', sans-serif;
     color: white;
     height: 17%;
     width: 97%;
-    z-index: 9;
+    z-index: 7;
     overflow: visible;
     /* opacity: 65%; */
 }
@@ -125,7 +125,7 @@ font-family: 'Ubuntu', sans-serif;
     justify-content: center;
     margin: 2px 0 0 0;
     cursor: pointer;
-    z-index: 9;
+    z-index: 7;
 }
 
 .main-button:hover{
@@ -152,7 +152,7 @@ font-family: 'Ubuntu', sans-serif;
 .overlays{
     position: relative;
     display: flex;
-    z-index: 10;
+    z-index: 8;
     /* border: solid #2F7291 8px; */
     border: solid black 8px;
     overflow:scroll 
@@ -166,7 +166,7 @@ h2{
     margin: 5px;
     text-align: center;
     cursor: pointer;
-    z-index: 10;
+    z-index: 8;
 }
 #xbox1{
     margin: 0 0 0 1%;
@@ -240,7 +240,7 @@ h1{
     background-color:mintcream;
     overflow: hidden;
     margin: -41% 0 0 15%;
-    z-index: 10;
+    z-index:8;
 }
 .overlay2{
     width: 70%;
@@ -248,7 +248,7 @@ h1{
     background-color:mintcream;
     overflow: hidden;
     margin: -43% 0 0 15%;
-    z-index: 10;
+    z-index: 8;
 }
 .overlay3{
     width: 70%;
@@ -257,7 +257,7 @@ h1{
     overflow: hidden;
     margin: -43% 0 0 15%;
     justify-items:end;
-    z-index: 10;
+    z-index: 8;
 }
 .paragraphs{
     font-family: 'Kalam', cursive;
@@ -289,20 +289,86 @@ h1{
     font-size: 32px;
 }
 .sidebar{
-    width: 40px;
+    display:block;
+    width: 60px;
     background-color: #9CB7BB;
     position: fixed;
     padding: 10% 0 0 0;
     height: 93%;
     margin: -43% 0 0 0;
-    z-index: 10;
+    z-index: 8;
+    overflow: hidden;
+}
+.sidebarDivs{
+    width: 100%;
+    height: 40px;
+    margin: 25px 0 0 0;
+}
+/* .sidebar:hover{
+    width: 100px;
+} */
+.sideIcons{
+    width: 60px;
+    height: auto;
 }
 .sideIcons:hover{
     background-color: #2F7291;
-
+    position:absolute;
 }
 #calendar{
     width: auto;
     height: 62px;
-    margin: 0 0 0 -36%;
+    margin: 0 0 0 -18px;
+}
+.sidebarTitles{
+    position: relative;
+    display: flex;
+    /* margin: -150px 0 0 50px; */
+    /* border: red solid 2px;  */
+    z-index: 10;
+    height: 30px;
+    cursor: pointer;
+}
+.sideTitleCross{
+    margin: -430px 0 0 -20%;
+    width: 350px;
+    transition: all;
+}
+.sideTitleCross:hover{
+    margin: -430px 0 0 5%;
+    width: 250px;
+    transition-duration: .5s;
+}
+/* .hideCross{
+    margin: -430px 0 0 -105%;
+    width: 250px;
+} */
+.sideTitleCalendar{
+    margin: 28px 0 0 -15%;
+    width: 300px;
+    transition: all;
+}
+.sideTitleCalendar:hover{
+    margin: 28px 0 0 5%;
+    width: 250px;
+    transition-duration: .5s;
+
+}
+.hideCalendar{
+    margin: 45px 0 0 -105%;
+    width: 250px;
+}
+.sideTitleBible{
+    margin: 30px 0 0 -20%;
+    width: 350px;
+    transition: all;
+}
+.sideTitleBible:hover{
+    margin: 30px 0 0 5%;
+    transition-duration: .5s;
+
+}
+.hideTitleBible{
+    margin: 40px 0 0 -105%;
+    width: 250px;
 }
