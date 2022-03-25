@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1">
+    <meta charset="UTF-8">
+    <meta property="og:title" content="The Gathering Table" />
+    <meta name="theme-color" content="#2F7291" />
+    <meta name="theme-color" content="#48707B" />
+    <title>The Gathering Table | Welcome home</title>
+    <link rel="icon" type="image/x-icon" href="assets/table-logo.png">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/djwSignature-white.png"> -->    
+    <script src="myScripts.js" rel="script"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css" >
+    </head>
+    <body onload="logoGathers()">
+        <header class="hero notOpaque" id="hero-div">
+            <img src="assets/cover.png"/>
+            <img id="logo-img1" class="logoImages logo-img1-start" src="assets/cover-words-transparent.png">
+            <img id="logo-img2" class="logoImages logoLargeImages logo-img2-start" src="assets/cover-words-transparent.png">
+            <img id="logo-img3" class="logoImages logoSmallImages logo-img3-start" src="assets/cover-words-transparent.png">
+        </header>
+        <div class="main notOpaque" id='main-div'>
+                <div class="main-button" onclick=whoWeAre()>WHO WE ARE
+                </div>
+                <div class="main-button" onclick=whatWeDo()>WHAT WE DO
+                </div>
+                <div class="main-button" onclick=howToConnect()>HOW TO CONNECT
+            </div>
+        </div>
+        <div >
+            <div class="hidden overlays overlay1" id="whoWeAreOverlay" onclick=clearOverlays()>
+                <h2 id="xbox1">x</h2>
+                <img id="food1img" src="assets/food1.png">
+                <h1 id="title1" class="titles">WHO WE ARE</h1>
+                <img id="hills1" class="hills" src="assets/hills-cover copy.png">
+                <div id="p1" class="paragraphs">
+                    <p>
+                        We are a small diverse group of christ followers in the Inland Northwest, 
+                        each with our own story of how we finally embraced small community as our church.
+                        We started gathering as friends in an informal setting in 2018.
+                        We did not know what God held for our future, and we still do not.
+                        We continue to seek his will, follow his lead, and to love and support each other
+                        in prayer and carrying personal joys and sorrows. Food is our thing,
+                        and we meet weekly to share food and life. 
+                    </p>
+                </div>
+            </div>
+            <div class="hidden overlays overlay2" id="whatWeDoOverlay" onclick=clearOverlays()>
+                <h2 id="xbox2">x</h2>
+                <img id="food2img" src="assets/food2.JPG">
+                <h1 id="title2" class="titles">WHAT WE DO</h1>
+                <img id="hills2" class="hills" src="assets/hills-cover copy.png">
+                <div id="p2" class="paragraphs">
+                    <p>
+                        <ul>
+                            <li>
+                                eat
+                            </li>
+                            <li>
+                                pray
+                            </li>
+                            <li>
+                                support
+                            </li>
+                            <li>
+                                give
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="hidden overlays overlay3" id="connectOverlay" onclick=clearOverlays()>
+                <h2 id="xbox3"> x</h2>
+                <img id="food3img" src="assets/Food3.png">
+                <h1 id="title3" class="titles">HOW TO CONNECT</h1>
+                <img id="hills3" class="hills" src="assets/hills-cover copy.png">
+                <div id="p3" class="paragraphs">
+                    <p>
+                        For now, email douglasjwood67@gmail.com
+                        more social media on its way, some day.... 
+                    </p>
+                    <img id="fb" class="social" src="assets/FB.png">
+                    <img id="insta" class="social" src="assets/insta.png">
+                    <img id="twitter" class="social" src="assets/twitter.jpeg">
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div>
+                <img id= "cross" class="sideIcons" src="assets/cross.png">
+            </div>
+            <div>
+                <img id= "calendar" class="sideIcons" src="assets/calendar-icon-removebg-preview.png">
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <script src="myScripts.js" rel="script"></script>
+    </body>
+    <footer>
+
+    </footer>
+</html>
