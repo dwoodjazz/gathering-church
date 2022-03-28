@@ -78,3 +78,41 @@ function clearOverlays(){
     hero.classList.replace('opaque','notOpaque');
     mainDiv.classList.replace('opaque','notOpaque');
 }
+
+function beliefCircle1(){
+    circle1=document.getElementById("belief1");
+    circle2=document.getElementById("belief2");
+    circle3=document.getElementById("belief3");
+    circle4=document.getElementById("belief4");
+    circle1.classList.replace('hiddenAndNoOpacity','visibleAndOpaque'); 
+}
+function beliefCircle2(){
+    circle1=document.getElementById("belief1");
+    circle2=document.getElementById("belief2");
+    circle3=document.getElementById("belief3");
+    circle4=document.getElementById("belief4");
+    circle2.classList.replace('hiddenAndNoOpacity','visibleAndOpaque'); 
+}
+function beliefCircle3(){
+    circle1=document.getElementById("belief1");
+    circle2=document.getElementById("belief2");
+    circle3=document.getElementById("belief3");
+    circle4=document.getElementById("belief4");
+    circle3.classList.replace('hiddenAndNoOpacity','visibleAndOpaque'); 
+}
+function beliefCircle4(){
+    circle1=document.getElementById("belief1");
+    circle2=document.getElementById("belief2");
+    circle3=document.getElementById("belief3");
+    circle4=document.getElementById("belief4");
+    circle4.classList.replace('hiddenAndNoOpacity','visibleAndOpaque'); 
+}
+
+function startCircles(){
+    beliefCircle1();
+    setInterval("beliefCircle2()", 1500);
+    setInterval("beliefCircle3()", 2500);
+    setInterval("beliefCircle4()", 3500);
+
+
+}

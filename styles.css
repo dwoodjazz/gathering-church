@@ -294,7 +294,7 @@ h1{
     background-color: #9CB7BB;
     position: fixed;
     padding: 10% 0 0 0;
-    height: 93%;
+    height: 57%;
     margin: -43% 0 0 0;
     z-index: 8;
     overflow: hidden;
@@ -327,10 +327,11 @@ h1{
     /* border: red solid 2px;  */
     z-index: 10;
     height: 30px;
-    cursor: pointer;
+    visibility: hidden;
 }
 .sideTitleCross{
-    margin: -430px 0 0 -20%;
+    /* margin: -430px 0 0 -20%; */
+    margin: -430px 0 0 5%;
     width: 350px;
     transition: all;
 }
@@ -344,7 +345,9 @@ h1{
     width: 250px;
 } */
 .sideTitleCalendar{
-    margin: 28px 0 0 -15%;
+    /* margin: 28px 0 0 -15%; */
+    margin: 36px 0 0 5%;
+
     width: 300px;
     transition: all;
 }
@@ -352,23 +355,175 @@ h1{
     margin: 28px 0 0 5%;
     width: 250px;
     transition-duration: .5s;
-
 }
 .hideCalendar{
     margin: 45px 0 0 -105%;
     width: 250px;
 }
 .sideTitleBible{
-    margin: 30px 0 0 -20%;
+    /* margin: 30px 0 0 -20%; */
+    margin: 30px 0 0 5%;
     width: 350px;
     transition: all;
 }
 .sideTitleBible:hover{
     margin: 30px 0 0 5%;
     transition-duration: .5s;
-
 }
 .hideTitleBible{
     margin: 40px 0 0 -105%;
     width: 250px;
+}
+.beliefs-hero{
+    background-image: url("assets/hills-cover\ copy.png");
+    /* border: solid red 2px; */
+    height: 240px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    margin: 5px 0 0 0;
+    z-index: 10;
+}
+.main-beliefs{
+    display: flex;
+    /* border: solid red 2px; */
+    height: 230px;
+    width: 33%;
+    /* margin: -80px 0 0 0; */
+    z-index: 9;
+}
+nav{
+    display: flex;
+    justify-content:flex-end;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+    background-color: lightblue;
+}
+button{
+    cursor: pointer;
+}
+#cross-beliefs-img{
+    width: auto;
+    height: 50px;
+    margin: 25px 0 0 0;
+}
+.beliefs{
+    display: flex;
+    font-family: 'Kalam', cursive;
+    font-size: 1.2rem;
+    /* font-family: 'Ubuntu', sans-serif;  */
+    text-align:center;
+    padding: 50px;
+    margin: 1px;
+    width: 20px;
+    height: auto;
+    border-radius: 28rem;
+    background-color:springgreen;
+    overflow: hidden;
+}
+.visibleAndOpacity{
+    visibility: visible;
+    opacity: 100%;
+    transition-duration: 12s;
+    transition: 4s;
+}
+.hiddenAndNoOpacity{
+    visibility: hidden;
+    opacity: 0%;
+}
+#belief1{
+    width: 120px;
+    margin: -470px 0 0 43%;
+    transition-property: all;
+    transition: 4s;
+}
+#belief2{
+    width: 165px;
+    margin: -20px 0 0 68%;
+    transition-property: all;
+    transition: 4s;
+}
+#belief3{
+    width: 125px;
+    margin: -6px 0 0 43%;
+    transition-property: all;
+    transition: 4s;
+}
+#belief4{
+    width: 140px;
+    margin: -460px 0 0 15%;
+    transition-property: all;
+    transition: 4s;
+}
+#arrow1div{
+    margin: -320px 0 0 63%;
+}
+#curvedarrow1 {
+    position: relative;
+    width: 0;
+    height: 0;
+    right: -64px;
+    border-top: 40px solid transparent;
+    border-right: 40px solid springgreen;
+    transform: rotate(10deg);
+  }
+  #curvedarrow1:after {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-top: 6px solid springgreen;
+    border-radius: 20px 0 0 0;
+    top: -72px;
+    left: -109px;
+    width: 112px;
+    height: 112px;
+    transform: rotate(45deg);
+  }
+  #arrow2div{
+      margin: 310px 0 0 63%;
+  }
+  #curvedarrow2 {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-left: 40px solid springgreen;
+    transform: rotate(10deg);
+  }
+  #curvedarrow2:after {
+    content: "";
+    position: absolute;
+    border-bottom: 0 solid transparent;
+    border-right: 6px solid springgreen;
+    border-radius: 20px 20px 0 20px;
+    top: -147px;
+    left: -90px;
+    width: 112px;
+    height: 112px;
+    transform: rotate(45deg);
+  }
+  #arrow3div{
+    margin: -60px 0 0 30%;
+}
+#curvedarrow3 {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid springgreen;
+  transform: rotate(10deg);
+}
+#curvedarrow3:after {
+  content: "";
+  position: absolute;
+  /* border-top: 0 solid transparent; */
+  border-right: 6px solid springgreen;
+  border-radius: 20px 20px 0 0;
+  top: -36px;
+  left: 0px;
+  width: 112px;
+  height: 112px;
+  transform: rotate(135deg);
 }

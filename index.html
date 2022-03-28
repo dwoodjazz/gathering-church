@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="assets/table-logo.png">
     <!-- <link rel="icon" type="image/x-icon" href="assets/djwSignature-white.png"> -->    
     <script src="myScripts.js" rel="script"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="styles.css" rel="stylesheet" type="text/css" >
     </head>
     <body onload="logoGathers()">
@@ -86,27 +87,36 @@
                 </div>
             </div>
         </div>
-        <div class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <div class="sidebarDivs">
-                <img id= "cross" class="sideIcons" src="assets/cross.png">
+                <a href="/basic-beliefs.html"><img id= "cross" class="sideIcons" src="assets/cross.png"></a>
             </div>
             <div class="sidebarDivs">
-                <img id= "calendar" class="sideIcons" src="assets/calendar-icon-removebg-preview.png">
+                <a href="/events.html"><img id= "calendar" class="sideIcons" src="assets/calendar-icon-removebg-preview.png"></a>
             </div>
             <div class="sidebarDivs">
-                <img id= "bible" class="sideIcons" src="assets/bible-icon-removebg-preview.png">
+                <a href="/study-material.html"><img id= "bible" class="sideIcons" src="assets/bible-icon-removebg-preview.png"></a>
 
             </div>
-        </div>
-        <div class=" sidebarTitles sideTitleCross" id="sideTitleCross">
+        </aside>
+        <script>
+            $(document).ready(function(){
+              $("aside").hover(function(){
+                $("p2").css("visibility", "visible");
+                }, function(){
+                $("p2").css("visibility", "hidden");
+              });
+            });
+            </script>
+        <p2 class=" sidebarTitles sideTitleCross" id="sideTitleCross" onclick="href='#basic-beliefs.html'">
             our (very basic) beliefs...
-        </div>
-        <div class=" sidebarTitles sideTitleCalendar" id="sideTitleCalendar">
+        </p2>
+        <p2 class=" sidebarTitles sideTitleCalendar" id="sideTitleCalendar" onclick="href='#events.html'">
             our upcoming events
-        </div>
-        <div class=" sidebarTitles sideTitleBible" id="sideTitleBible">
+        </p2>
+        <p2 class=" sidebarTitles sideTitleBible" id="sideTitleBible" onclick="href='#study-material.html'">
             some current study material
-        </div>
+        </p2>
         <script src="myScripts.js" rel="script"></script>
     </body>
     <footer>
