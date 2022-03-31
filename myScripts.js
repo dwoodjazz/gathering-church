@@ -1,21 +1,3 @@
-const memberArray = [
-    "Kristin Wood", 
-    "Douglas 'Douggy Jay' Wood",
-    "AJ Anderson",
-    "Michael Murray",
-    "Sarah Murray",
-    "Joanne Zyph",
-    "Dan Zyph",
-    "Ken Osso",
-    "Kim Osso",
-    "Megan Ballard",
-    "Jaden Ballard",
-    "Erika Anderson",
-    "Henry Anderson"
-];
-
-let nameFloat=document.getElementByID("members");
-nameFloat.innerHTML="WhoopsieDaisie";
 
 function logoGathers(){ 
     gatheringimg1=document.getElementById('logo-img1');
@@ -35,9 +17,9 @@ function whoWeAre(){
     mainDiv=document.getElementById('main-div');
     hero.classList.replace('notOpaque','opaque');
     mainDiv.classList.replace('notOpaque','opaque');
-    ovrly1.classList.replace('hidden','visible');
-    ovrly2.classList.replace('visible','hidden');
-    ovrly3.classList.replace('visible','hidden');
+    ovrly1.classList.replace('noOverlayDisplay','overlayDisplay');
+    ovrly2.classList.replace('overlayDisplay','noOverlayDisplay');
+    ovrly3.classList.replace('overlayDisplay','noOverlayDisplay');
 }
 
 function whatWeDo(){
@@ -48,9 +30,9 @@ function whatWeDo(){
     mainDiv=document.getElementById('main-div');
     hero.classList.replace('notOpaque','opaque');
     mainDiv.classList.replace('notOpaque','opaque');
-    ovrly1.classList.replace('visible','hidden');
-    ovrly2.classList.replace('hidden','visible');
-    ovrly3.classList.replace('visible','hidden');
+    ovrly1.classList.replace('overlayDisplay','noOverlayDisplay');
+    ovrly2.classList.replace('noOverlayDisplay','overlayDisplay');
+    ovrly3.classList.replace('overlayDisplay','noOverlayDisplay');
 }
 
 function howToConnect(){
@@ -61,18 +43,18 @@ function howToConnect(){
     mainDiv=document.getElementById('main-div');
     hero.classList.replace('notOpaque','opaque');
     mainDiv.classList.replace('notOpaque','opaque');
-    ovrly1.classList.replace('visible','hidden');
-    ovrly2.classList.replace('visible','hidden');
-    ovrly3.classList.replace('hidden','visible');
+    ovrly1.classList.replace('overlayDisplay','noOverlayDisplay');
+    ovrly2.classList.replace('overlayDisplay','noOverlayDisplay');
+    ovrly3.classList.replace('noOverlayDisplay','overlayDisplay');
 }
 
 function clearOverlays(){
     ovrly3=document.getElementById('connectOverlay')
     ovrly2=document.getElementById('whatWeDoOverlay')
     ovrly1=document.getElementById('whoWeAreOverlay');
-    ovrly1.classList.replace('visible','hidden');
-    ovrly2.classList.replace('visible','hidden');
-    ovrly3.classList.replace('visible','hidden');
+    ovrly1.classList.replace('overlayDisplay','noOverlayDisplay');
+    ovrly2.classList.replace('overlayDisplay','noOverlayDisplay');
+    ovrly3.classList.replace('overlayDisplay','noOverlayDisplay');
     hero=document.getElementById('hero-div');
     mainDiv=document.getElementById('main-div');
     hero.classList.replace('opaque','notOpaque');
@@ -81,38 +63,50 @@ function clearOverlays(){
 
 function beliefCircle1(){
     circle1=document.getElementById("belief1");
-    circle2=document.getElementById("belief2");
-    circle3=document.getElementById("belief3");
-    circle4=document.getElementById("belief4");
+    arrow1=document.getElementById("arrow1div");
     circle1.classList.replace('hiddenAndNoOpacity','visibleAndOpaque'); 
+    arrow1.classList.replace('hiddenAndNoOpacity','visibleAndOpaque'); 
 }
 function beliefCircle2(){
-    circle1=document.getElementById("belief1");
     circle2=document.getElementById("belief2");
-    circle3=document.getElementById("belief3");
-    circle4=document.getElementById("belief4");
+    arrow2=document.getElementById("arrow2div");
     circle2.classList.replace('hiddenAndNoOpacity','visibleAndOpaque'); 
+    arrow2.classList.replace('hiddenAndNoOpacity','visibleAndOpaque'); 
+
 }
 function beliefCircle3(){
-    circle1=document.getElementById("belief1");
-    circle2=document.getElementById("belief2");
     circle3=document.getElementById("belief3");
-    circle4=document.getElementById("belief4");
+    arrow3=document.getElementById("arrow3div");
     circle3.classList.replace('hiddenAndNoOpacity','visibleAndOpaque'); 
+    arrow3.classList.replace('hiddenAndNoOpacity','visibleAndOpaque'); 
+
 }
 function beliefCircle4(){
-    circle1=document.getElementById("belief1");
-    circle2=document.getElementById("belief2");
-    circle3=document.getElementById("belief3");
     circle4=document.getElementById("belief4");
+    arrow4=document.getElementById("arrow4div");
     circle4.classList.replace('hiddenAndNoOpacity','visibleAndOpaque'); 
+    arrow4.classList.replace('hiddenAndNoOpacity','visibleAndOpaque'); 
+
 }
+
 
 function startCircles(){
     beliefCircle1();
     setInterval("beliefCircle2()", 1500);
     setInterval("beliefCircle3()", 2500);
     setInterval("beliefCircle4()", 3500);
-
-
 }
+
+function nextMonth(){
+    month1=document.getElementById("month1Div");
+    month2=document.getElementById("month2Div");
+    month1.classList.replace("display","noDisplay");
+    month2.classList.replace("noDisplay","display");
+}
+function lastMonth(){
+    month1=document.getElementById("month1Div");
+    month2=document.getElementById("month2Div");
+    month1.classList.replace("noDisplay","display");
+    month2.classList.replace("display","noDisplay");
+}
+
