@@ -734,7 +734,7 @@ hero{
     }
     .overlay1{
        position: fixed; 
-       height: 95%
+       height: 85%
     }
     #title1{
         width: 310px;
@@ -743,7 +743,8 @@ hero{
     #food1img{
         position: absolute;
         margin: 185% 0 0 15%;
-        width: 55%;
+        width: 65%;
+        height: 100px;
     }
     #hills1{
         height: 50px;
