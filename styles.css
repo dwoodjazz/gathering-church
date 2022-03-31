@@ -354,7 +354,7 @@ h3{
 .sidebarTitles{
     position: relative;
     display: flex;
-    /* margin: -150px 0 0 50px; */
+    margin: 250px 0 0 50px;
     /* border: red solid 2px;  */
     z-index: 10;
     height: 30px;
@@ -362,7 +362,7 @@ h3{
 }
 .sideTitleCross{
     /* margin: -430px 0 0 -20%; */
-    margin: -430px 0 0 5%;
+    margin: -380px 0 0 5%;
     width: 350px;
     transition: all;
 }
@@ -684,6 +684,12 @@ hero{
     width: auto ;
     margin: 25px 0 0 -4%;
 }
+#contacts-logo{
+    position: absolute;
+    height: 50px;
+    width: auto ;
+    margin: -75px 0 0 30%;
+}
 
 
 
@@ -881,4 +887,19 @@ hero{
     #lastMonthArrow {
         margin: 42px 0 0 75%;
     }
+    #contactH1{
+        width: 70%;
+    }
+    #contactH1, h3{
+        width: 100%;
+    }
+    #contacts-logo {
+        position: absolute;
+        width: 50px;
+        margin: -22% 0 0 80%;
+    }
+    /* .sidebarTitles{
+        visibility: visible;
+        margin: 0px 0 0 50px;
+    } */
 }
